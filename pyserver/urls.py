@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from getRefrain import views
 
 urlpatterns = [
     path('getrefrain/',include('getRefrain.urls')),
+    path('genreClassify/',include('genreClassify.urls')),
     path('admin/', admin.site.urls),
 ]
